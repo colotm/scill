@@ -1020,6 +1020,27 @@ const menuItems = [
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
     },
+        {
+        name: (
+            <FormattedMessage
+                defaultMessage="DinosaurMod Extra Extensions"
+                description="Name of library item to open the Extra Extensions gallery"
+                id="pm.extraLibraryExtensions.name"
+            />
+        ),
+        href: 'https://extensions.dinosaurmod.com/',
+        extensionId: 'defaultextensionicon',
+        iconURL: penguinmodLibraryExtensionIcon,
+        description: (
+            <FormattedMessage
+                defaultMessage="See some user-dinosaur extensions. Opens in a new tab."
+                description="Description of library item to open the Extra Extensions gallery"
+                id="pm.extraLibraryExtensions.description"
+            />
+        ),
+        tags: ['penguinmod', 'library'],
+        featured: true
+    },
     {
         name: (
             <FormattedMessage
@@ -1067,16 +1088,34 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'SharkPool\'s Extension Collection',
-        href: 'https://sharkpools-extensions.vercel.app/?originPM=true',
-        extensionId: 'special_sharkpoolExtensionLibrary',
+        name: 'SharkPool Extension',
+        href: 'https://sharkpools-extensions.vercel.app/',
+        extensionId: 'music',
         iconURL: sharkpoolGalleryIcon,
-        description: 'Tons of extensions created by SharkPool.\n\nClick on an extension while this menu is open to add it to your project.',
-        credits: 'Listed in the site',
-        tags: ['library'],
+        description: 'SHARKPOOL IS DONE PENGUIN',
         featured: true
     },
+
     {
+        // not really an extension, but it's easiest to present it as one
+        name: (
+            <FormattedMessage
+                defaultMessage="Custom Extension"
+                description="Name of library item to load a custom extension from a remote source"
+                id="tw.customExtension.name"
+            />
+        ),
+        extensionId: '',
+        iconURL: customExtensionIcon,
+        description: (
+            <FormattedMessage
+                defaultMessage="Load custom extensions from URLs"
+                description="Description of library item to load a custom extension from a custom source"
+                id="tw.customExtension.description"
+            />
+        ),
+        featured: true
+    },     {
         // not really an extension, but it's easiest to present it as one
         name: 'TurboBuilder',
         href: 'https://turbobuilder.vercel.app/',
@@ -1097,26 +1136,6 @@ const menuItems = [
         description: 'Publicly available developer branch, with the latest features.',
         credits: 'Started by JeremyGamer13, continued by jwklong',
         tags: ['extcreate'],
-        featured: true
-    },
-    {
-        // not really an extension, but it's easiest to present it as one
-        name: (
-            <FormattedMessage
-                defaultMessage="Custom Extension"
-                description="Name of library item to load a custom extension from a remote source"
-                id="tw.customExtension.name"
-            />
-        ),
-        extensionId: '',
-        iconURL: customExtensionIcon,
-        description: (
-            <FormattedMessage
-                defaultMessage="Load custom extensions from URLs, files, or JavaScript source code."
-                description="Description of library item to load a custom extension from a custom source"
-                id="tw.customExtension.description"
-            />
-        ),
         featured: true
     }
 ];
@@ -1296,7 +1315,8 @@ if (IsLocal || IsLiveTests) {
             featured: true
         },
         {
-            name: 'Editor',
+            name: 'Editor (PenguinMod)',
+            tags: ['editor', 'penguinmod'],
             href: 'https://studio.penguinmod.com/editor.html',
             extensionId: 'special_editorExtensionLibrary',
             iconURL: penguinmodLibraryExtensionIcon,
