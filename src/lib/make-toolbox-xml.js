@@ -676,11 +676,6 @@ const control = function (isInitialSetup, isStage) {
         </block>
         ${blockSeparator}
         <block type="control_all_at_once"/>
-        <block type="control_run_as_sprite">
-            <value name="RUN_AS_OPTION">
-                <shadow type="control_run_as_sprite_menu"/>
-            </value>
-        </block>
         ${blockSeparator}
         <block type="control_try_catch"/>
         <block type="control_throw_error">
@@ -692,6 +687,11 @@ const control = function (isInitialSetup, isStage) {
         </block>
         <block type="control_error"/>
         ${blockSeparator}
+                <block type="control_run_as_sprite">
+            <value name="RUN_AS_OPTION">
+                <shadow type="control_run_as_sprite_menu"/>
+            </value>
+        </block>
         <block type="control_backToGreenFlag"></block>
         <block type="control_stop_sprite">
             <value name="STOP_OPTION">
@@ -1156,6 +1156,10 @@ const operators = function (isInitialSetup) {
         ${blockSeparator}
         <block type="operator_and"/>
         <block type="operator_or"/>
+                <block type="operator_nand"/>
+        <block type="operator_nor"/>
+                <block type="operator_xor"/>
+        <block type="operator_xnor"/>
         <block type="operator_not"/>
         ${blockSeparator}
         ${isInitialSetup ? '' : `
