@@ -1363,11 +1363,11 @@ if (IsLocal || IsLiveTests) {
         {
             name: '3D',
             extensionId: 'jg3d',
-            iconURL: jg3dExtensionIcon,
+            iconURL: defaultExtensionIcon,
             tags: ['penguinmod', '3d'],
             customInsetColor: '#B200FF',
             insetIconURL: jg3dInsetExtensionIcon,
-            description: 'Use the magic of 3D to spice up your project.',
+            description: 'Do not extension to project if thing are extension. In Development. Use the magic of 3D to spice up your project.',
             featured: true
         },
         {
