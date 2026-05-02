@@ -1,29 +1,4 @@
-[
-    {
-        "name": "Aae-a",
-        "tags": [
-            "drawing"
-        ],
-        "bitmapResolution": 1,
-        "dataFormat": "svg",
-        "rotationCenterX": 0,
-        "rotationCenterY": 0,
-        "fromPenguinModLibrary": true,
-        "libraryFilePage": "images/aae.svg"
-    },
-    {
-        "name": "Aae-b",
-        "tags": [
-            "drawing",
-            "happy"
-        ],
-        "bitmapResolution": 1,
-        "dataFormat": "svg",
-        "rotationCenterX": 0,
-        "rotationCenterY": 0,
-        "fromPenguinModLibrary": true,
-        "libraryFilePage": "images/aae-happy.svg"
-    },
+{
     {
         "name": "Abby-a",
         "tags": [
@@ -692,36 +667,6 @@
         "md5ext": "e5d3d3eb61797f5999732a8f5efead24.svg",
         "rotationCenterX": 39,
         "rotationCenterY": 38
-    },
-    {
-        "name": "Base-a",
-        "tags": [
-            "character",
-            "template",
-            "person",
-            "new"
-        ],
-        "bitmapResolution": 1,
-        "dataFormat": "svg",
-        "rotationCenterX": 0,
-        "rotationCenterY": 0,
-        "fromPenguinModLibrary": true,
-        "libraryFilePage": "images/user/Base-a.svg"
-    },
-    {
-        "name": "Base-b",
-        "tags": [
-            "character",
-            "template",
-            "person",
-            "new"
-        ],
-        "bitmapResolution": 1,
-        "dataFormat": "svg",
-        "rotationCenterX": 0,
-        "rotationCenterY": 0,
-        "fromPenguinModLibrary": true,
-        "libraryFilePage": "images/user/Base-b.svg"
     },
     {
         "name": "Baseball",
@@ -4425,66 +4370,6 @@
         "rotationCenterY": 0,
         "fromPenguinModLibrary": true,
         "libraryFilePage": "images/user/ewo-c.svg"
-    },
-    {
-        "name": "Ewo-d",
-        "tags": [
-            "turkey",
-            "bird",
-            "animals",
-            "new"
-        ],
-        "bitmapResolution": 1,
-        "dataFormat": "svg",
-        "rotationCenterX": 0,
-        "rotationCenterY": 0,
-        "fromPenguinModLibrary": true,
-        "libraryFilePage": "images/user/ewo-d.svg"
-    },
-    {
-        "name": "Ewo-e",
-        "tags": [
-            "turkey",
-            "bird",
-            "animals",
-            "new"
-        ],
-        "bitmapResolution": 1,
-        "dataFormat": "svg",
-        "rotationCenterX": 0,
-        "rotationCenterY": 0,
-        "fromPenguinModLibrary": true,
-        "libraryFilePage": "images/user/ewo-e.svg"
-    },
-    {
-        "name": "Ewo-f",
-        "tags": [
-            "turkey",
-            "bird",
-            "animals",
-            "new"
-        ],
-        "bitmapResolution": 1,
-        "dataFormat": "svg",
-        "rotationCenterX": 0,
-        "rotationCenterY": 0,
-        "fromPenguinModLibrary": true,
-        "libraryFilePage": "images/user/ewo-f.svg"
-    },
-    {
-        "name": "Ewo-g",
-        "tags": [
-            "turkey",
-            "bird",
-            "animals",
-            "new"
-        ],
-        "bitmapResolution": 1,
-        "dataFormat": "svg",
-        "rotationCenterX": 0,
-        "rotationCenterY": 0,
-        "fromPenguinModLibrary": true,
-        "libraryFilePage": "images/user/ewo-g.svg"
     },
     {
         "name": "Fairy-a",
