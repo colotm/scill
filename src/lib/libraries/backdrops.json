@@ -316,6 +316,17 @@
         "rotationCenterY": 0,
         "fromPenguinModLibrary": true,
         "libraryFilePage": "images/user/backdrops/Checkers.svg"
+    },{
+        "name": "Earh in space",
+        "tags": [
+            "space",
+        ],
+        "assetId": "20344b0edcc498281e4cb80242a72667",
+        "bitmapResolution": 2,
+        "dataFormat": "png",
+        "md5ext": "20344b0edcc498281e4cb80242a72667.png",
+        "rotationCenterX": 480,
+        "rotationCenterY": 360
     },
     {
         "name": "Circles",
