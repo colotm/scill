@@ -670,12 +670,12 @@ const menuItems = [
                 id="pm.extraLibraryExtensions.name"
             />
         ),
-        href: 'https://extensions.dinosaurmod.com/',
+        href: 'https://dinosaurmod.github.io/extensions/',
         extensionId: 'defaultextensionicon',
         iconURL: penguinmodLibraryExtensionIcon,
         description: (
             <FormattedMessage
-                defaultMessage="See some user-dinosaur extensions. Opens in a new tab."
+                defaultMessage="See dinosaur extension new tab."
                 description="Description of library item to open the Extra Extensions gallery"
                 id="pm.extraLibraryExtensions.description"
             />
@@ -730,26 +730,8 @@ const menuItems = [
         featured: true
     },
 
-    {
-        // not really an extension, but it's easiest to present it as one
-        name: (
-            <FormattedMessage
-                defaultMessage="Custom Extension"
-                description="Name of library item to load a custom extension from a remote source"
-                id="tw.customExtension.name"
-            />
-        ),
-        extensionId: '',
-        iconURL: customExtensionIcon,
-        description: (
-            <FormattedMessage
-                defaultMessage="Load custom extensions from URLs"
-                description="Description of library item to load a custom extension from a custom source"
-                id="tw.customExtension.description"
-            />
-        ),
-        featured: true
-    },
+
+    
     
             featured: true
         },
@@ -790,24 +772,29 @@ const menuItems = [
                 />
             ),
             featured: true
-        },
+        
+    {
+        // not really an extension, but it's easiest to present it as one
+        name: (
+            <FormattedMessage
+                defaultMessage="Custom Extension"
+                description="Name of library item to load a custom extension from a remote source"
+                id="tw.customExtension.name"
+            />
+        ),
+            },
         {
-            name: 'Animation',
-            extensionId: 'jgAnimation',
-            iconURL: jgAnimationExtensionIcon,
-            tags: ['penguinmod'],
-            description: 'In development. Currently buggy and missing features.',
-            featured: true
-        },
-        {
-            name: 'Virtual Reality',
-            extensionId: 'jgVr',
-            iconURL: jgVrExtensionIcon,
-            tags: ['penguinmod', 'hardware'],
-            description: 'In development.',
-            credits: 'Vadik1',
-            featured: true
-        }
+        extensionId: '',
+        iconURL: defaultExtensionIcon,
+        description: (
+            <FormattedMessage
+                defaultMessage="Load custom extensions."
+                description="Description of library item to load a custom extension from a custom source"
+                id="tw.customExtension.description"
+            />
+        ),
+        featured: true
+    },
     ];
     extras.forEach(ext => {
         menuItems.push(ext);
