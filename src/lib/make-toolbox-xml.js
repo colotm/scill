@@ -162,6 +162,8 @@ const motion = function (isInitialSetup, isStage, targetId) {
             </value>
         </block>
         ${blockSeparator}
+        <block type="motion_move_sprite_to_scene_side"/>
+        ${blockSeparator}
         <block type="motion_ifonedgebounce"/>
         <block type="motion_ifonspritebounce">
             <value name="SPRITE">
@@ -170,7 +172,6 @@ const motion = function (isInitialSetup, isStage, targetId) {
         </block>
         ${blockSeparator}
         <block type="motion_setrotationstyle"/>
-        <block type="motion_move_sprite_to_scene_side"/>
         ${blockSeparator}
         <block id="${targetId}_xposition" type="motion_xposition"/>
         <block id="${targetId}_yposition" type="motion_yposition"/>
