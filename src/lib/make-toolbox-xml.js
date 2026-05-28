@@ -16,7 +16,7 @@ const translate = (id, english) => {
 const motion = function (isInitialSetup, isStage, targetId) {
     const stageSelected = translate(
         'MOTION_STAGE_SELECTED',
-        'Stage selected: no motion blocks'
+        'Stage selected no motion!'
     );
     return `
     <category name="%{BKY_CATEGORY_MOTION}" id="motion" colour="#4C97FF" secondaryColour="#3373CC">
