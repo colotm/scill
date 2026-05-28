@@ -227,16 +227,7 @@ const messages = defineMessages({
         description: 'Label for the timer monitor when shown on the stage',
         id: 'gui.opcodeLabels.timer'
     },
-    sensing_mousedown: {
-        defaultMessage: 'mouse down?',
-        description: 'Label for the mouse down monitor when shown on the stage',
-        id: 'gui.opcodeLabels.mousedown'
-    },
-    sensing_mouseclicked: {
-        defaultMessage: 'mouse clicked?',
-        description: 'Label for the mouse clicked monitor when shown on the stage',
-        id: 'gui.opcodeLabels.mouseclicked'
-    },
+    
     sensing_mousex: {
         defaultMessage: 'mouse x',
         description: 'Label for the mouse x monitor when shown on the stage',
@@ -252,26 +243,7 @@ const messages = defineMessages({
         description: 'Label for the clipboard item monitor when shown on the stage',
         id: 'gui.opcodeLabels.getclipboard'
     },
-    sensing_getdragmode: {
-        defaultMessage: 'draggable?',
-        description: 'Label for the draggable monitor when shown on the stage',
-        id: 'gui.opcodeLabels.getdragmode'
-    },
-    sensing_loud: {
-        defaultMessage: 'loud?',
-        description: 'Label for the loud monitor when shown on the stage',
-        id: 'gui.opcodeLabels.loud'
-    },
-    sensing_dayssince2000: {
-        defaultMessage: 'days since 2000',
-        description: 'Label for the days since 2000 monitor when shown on the stage',
-        id: 'gui.opcodeLabels.dayssince2000'
-    },
-    sensing_loggedin: {
-        defaultMessage: 'logged in?',
-        description: 'Label for the logged in monitor when shown on the stage',
-        id: 'gui.opcodeLabels.loggedin'
-    },
+
 
     // Control
     control_get_counter: {
@@ -312,7 +284,6 @@ class OpcodeLabels {
             looks_sayHeight: {category: 'looks'},
             looks_getEffectValue: {category: 'looks'},
             looks_tintColor: {category: 'looks'},
-            looks_getSpriteVisible: {category: 'looks'},
             looks_layersGetLayer: {category: 'looks'},
 
             // Data
@@ -330,15 +301,10 @@ class OpcodeLabels {
             sensing_username: {category: 'sensing'},
             sensing_current: {category: 'sensing'},
             sensing_timer: {category: 'sensing'},
-            sensing_mousedown: {category: 'sensing'},
-            sensing_mouseclicked: {category: 'sensing'},
+
             sensing_mousex: {category: 'sensing'},
             sensing_mousey: {category: 'sensing'},
             sensing_getclipboard: {category: 'sensing'},
-            sensing_getdragmode: {category: 'sensing'},
-            sensing_loud: {category: 'sensing'},
-            sensing_dayssince2000: {category: 'sensing'},
-            sensing_loggedin: {category: 'sensing'},
 
             // Control
             control_get_counter: {category: 'control'}
