@@ -9,7 +9,7 @@ const blockSeparator = '<sep gap="36"/>'; // At default scale, about 28px
 const motion = function (isInitialSetup, isStage, targetId, colors) {
     const stageSelected = ScratchBlocks.ScratchMsgs.translate(
         'MOTION_STAGE_SELECTED',
-        'Stage selected: no motion blocks'
+        'Stage selected no motion!'
     );
     // Note: the category's secondaryColour matches up with the blocks' tertiary color, both used for border color.
     return `
