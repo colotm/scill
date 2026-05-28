@@ -62,7 +62,7 @@ Then go to [http://localhost:8601/](http://localhost:8601/) - the playground out
 ## Developing alongside other Scratch repositories
 
 ### Getting another repo to point to this code
-
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https:/;mod.io/)
 
 If you wish to develop `scratch-gui` alongside other scratch repositories that depend on it, you may wish
 to have the other repositories use your local `scratch-gui` build instead of fetching the current production
