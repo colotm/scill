@@ -501,6 +501,34 @@ const menuItems = [
         internetConnectionRequired: false,
         twDeveloper: 'GarboMuffin'
     },
+        {
+            name: 'Inline Blocks',
+            extensionId: 'pmInlineBlocks',
+            iconURL: defaultExtensionIcon,
+            tags: ['penguinmod'],
+            description: 'Create them into any circle spot and have them return any value you want.',
+            featured: true
+        },
+        {
+            name: (
+                <FormattedMessage
+                    defaultMessage="Pathfinding"
+                    description="Name of Pathfinding extension"
+                    id="jgPathfinding.Pathfinding.name"
+                />
+            ),
+            extensionId: 'jgPathfinding',
+            tags: ['penguinmod'],
+            iconURL: jgPathfindingExtensionIcon,
+            description: (
+                <FormattedMessage
+                    defaultMessage="Have sprites navigate around obstacles in your game instead of clipping into them."
+                    description="Description of Pathfinding extension"
+                    id="jgPathfinding.Pathfinding.description"
+                />
+            ),
+            featured: true
+        
     {
         name: 'micro:bit',
         extensionId: 'microbit',
@@ -672,7 +700,7 @@ const menuItems = [
         ),
         href: 'https://dinosaurmod.github.io/extensions/',
         extensionId: 'defaultextensionicon',
-        iconURL: penguinmodLibraryExtensionIcon,
+        iconURL: defaultextensionicon,
         description: (
             <FormattedMessage
                 defaultMessage="See dinosaur extension new tab."
@@ -735,44 +763,7 @@ const menuItems = [
     
             featured: true
         },
-        {
-            name: 'Jeremys Dev Tools',
-            extensionId: 'jgDev',
-            iconURL: defaultExtensionIcon,
-            tags: ['penguinmod'],
-            description: 'Test extension to see if things are possible.\nDO NOT USE THIS IN PRODUCTION as blocks are subject to change and may corrupt your projects.',
-            credits: 'Some features added from LilyMakesThings, CubesterYT, TheShovel',
-            featured: true
-        },
-        
-        {
-            name: 'Inline Blocks',
-            extensionId: 'pmInlineBlocks',
-            iconURL: pmInlineBlocksExtensionIcon,
-            tags: ['penguinmod'],
-            description: 'Create quick blocks for simple tasks. Insert them into any circle spot and have them return any value you want.',
-            featured: true
-        },
-        {
-            name: (
-                <FormattedMessage
-                    defaultMessage="Pathfinding"
-                    description="Name of Pathfinding extension"
-                    id="jgPathfinding.Pathfinding.name"
-                />
-            ),
-            extensionId: 'jgPathfinding',
-            tags: ['penguinmod'],
-            iconURL: jgPathfindingExtensionIcon,
-            description: (
-                <FormattedMessage
-                    defaultMessage="(Unstable and or laggy; Needs further work) Have sprites navigate around obstacles in your game instead of clipping into them."
-                    description="Description of Pathfinding extension"
-                    id="jgPathfinding.Pathfinding.description"
-                />
-            ),
-            featured: true
-        
+    
     {
         // not really an extension, but it's easiest to present it as one
         name: (
