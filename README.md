@@ -131,7 +131,7 @@ You can run a single file of integration tests (in this example, the `button` te
 ```bash
 $(npm bin)/jest --runInBand test/unit/components/button.test.jsx
 ```
-
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/PenguinMod/penguinmod.github.io/)
 #### Running integration tests
 
 Integration tests use a headless browser to manipulate the actual HTML and javascript that the repo
