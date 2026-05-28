@@ -193,6 +193,7 @@ const menuItems = [
         name: '3D Math',
         extensionId: 'https://extensions.penguinmod.com/extensions/ObviousAlexC/3DMath.js',
         iconURL: 'https://extensions.penguinmod.com/images/ObviousAlexC/3DMath.svg',
+                   insetIconURL: 'https://extensions.penguinmod.com/images/ObviousAlexC/3DMath.svg',
         tags: ['penguinmod', '3d', 'graphics'],
         description: 'A handful of utilities for making your own sprite-based 3D engine.',
         extDeveloper: 'pinksheep2917',
@@ -502,33 +503,14 @@ const menuItems = [
         twDeveloper: 'GarboMuffin'
     },
         {
-            name: 'Inline Blocks',
-            extensionId: 'pmInlineBlocks',
+            name: 'Inline',
+            extensionId: 'pmInline',
             iconURL: defaultExtensionIcon,
             tags: ['penguinmod'],
             description: 'Create them into any circle spot and have them return any value you want.',
             featured: true
         },
-        {
-            name: (
-                <FormattedMessage
-                    defaultMessage="Pathfinding"
-                    description="Name of Pathfinding extension"
-                    id="jgPathfinding.Pathfinding.name"
-                />
-            ),
-            extensionId: 'jgPathfinding',
-            tags: ['penguinmod'],
-            iconURL: jgPathfindingExtensionIcon,
-            description: (
-                <FormattedMessage
-                    defaultMessage="Have sprites navigate around obstacles in your game instead of clipping into them."
-                    description="Description of Pathfinding extension"
-                    id="jgPathfinding.Pathfinding.description"
-                />
-            ),
-            featured: true
-        
+       
     {
         name: 'micro:bit',
         extensionId: 'microbit',
