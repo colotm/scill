@@ -131,7 +131,8 @@ You can run a single file of integration tests (in this example, the `button` te
 ```bash
 $(npm bin)/jest --runInBand test/unit/components/button.test.jsx
 ```
-[![Open in Gitpod]( https://x.com/abee2/status/2017413470669750292/photo/1)](https://www.scratch-online.com)
+[![Open in Gitpod]( [<img width="628" height="256" alt="image" src="https://github.com/user-attachments/assets/6889f1ba-a802-4fa4-8862-5c4e54ee6ed0" />
+](https://x.com/abee2/status/2017413470669750292?s=20))](https://www.scratch-online.com)
 #### Running integration tests
 
 Integration tests use a headless browser to manipulate the actual HTML and javascript that the repo
