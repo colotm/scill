@@ -1,4 +1,4 @@
- modified for in [TurboWarp](https://turbowarp.org/) modified for in [PenguinMod](https://studio.penguinmod.com) 😀
+ modified for in Turbo Warp Penguiod] 😀
 ## Setup
 
 See https://docs.turbowarp.org/development/getting-started to setup the complete TurboWarp environment.
@@ -293,4 +293,9 @@ We provide [Scratch](https://scratch.mit.edu) free of charge, and want to keep i
 
 -->
 ## Links
+
+[TurboWarp](https://turbowarp.org/) 
+
+[PenguinMod](https://studio.penguinmod.com)
+
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/PenguinMod/penguinmod.github.io/)
