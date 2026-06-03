@@ -238,35 +238,7 @@ const looks = function (isInitialSetup, isStage, targetId, costumeName, backdrop
             </value>
         </block>
         <block type="looks_stoptalking"/>
-        ${blockSeparator}
-        <block type="looks_setFont">
-            <value name="font">
-                <shadow type="text">
-                    <field name="TEXT">Helvetica</field>
-                </shadow>
-            </value>
-            <value name="size">
-                <shadow type="math_number">
-                    <field name="NUM">14</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="looks_setColor">
-            <field name="prop">BUBBLE_STROKE</field>
-            <value name="color">
-                <shadow type="colour_picker"></shadow>
-            </value>
-        </block>
-        <block type="looks_setShape">
-            <field name="prop">STROKE_WIDTH</field>
-            <value name="color">
-                <shadow type="math_number">
-                    <field name="NUM">0</field>
-                </shadow>
-            </value>
-        </block>
-        <block id="${targetId}_sayWidth" type="looks_sayWidth"></block>
-        <block id="${targetId}_sayHeight" type="looks_sayHeight"></block>
+
         ${blockSeparator}
         `}
         ${isStage ? `
@@ -369,14 +341,8 @@ const looks = function (isInitialSetup, isStage, targetId, costumeName, backdrop
                 </shadow>
             </value>
         </block>
-        <block type="looks_setTintColor">
-            <value name="color">
-                <shadow type="colour_picker"></shadow>
-            </value>
-        </block>
         <block type="looks_cleargraphiceffects"/>
         <block id="${targetId}_getEffectValue" type="looks_getEffectValue"/>
-        <block id="${targetId}_tintColor" type="looks_tintColor"/>
         ${blockSeparator}
         ${isStage ? '' : `
             <block type="looks_show"/>
@@ -444,18 +410,7 @@ const sound = function (isInitialSetup, isStage, targetId, soundName) {
                 </shadow>
             </value>
         </block>
-        <block id="${targetId}_sound_play_at_seconds_until_done" type="sound_play_at_seconds_until_done">
-            <value name="VALUE">
-                <shadow type="math_number">
-                    <field name="NUM">5</field>
-                </shadow>
-            </value>
-            <value name="SOUND_MENU">
-                <shadow type="sound_sounds_menu">
-                    <field name="SOUND_MENU">${soundName}</field>
-                </shadow>
-            </value>
-        </block>
+    
         ${blockSeparator}
         <block id="${targetId}_sound_play" type="sound_play">
             <value name="SOUND_MENU">
@@ -464,18 +419,9 @@ const sound = function (isInitialSetup, isStage, targetId, soundName) {
                 </shadow>
             </value>
         </block>
-        <block id="${targetId}_sound_play_at_seconds" type="sound_play_at_seconds">
-            <value name="VALUE">
-                <shadow type="math_number">
-                    <field name="NUM">5</field>
-                </shadow>
-            </value>
-            <value name="SOUND_MENU">
-                <shadow type="sound_sounds_menu">
-                    <field name="SOUND_MENU">${soundName}</field>
-                </shadow>
-            </value>
-        </block>
+              ${blockSeparator}  
+
+    
         <block id="${targetId}_sound_stop" type="sound_stop">
             <value name="SOUND_MENU">
                 <shadow type="sound_sounds_menu">
@@ -483,7 +429,6 @@ const sound = function (isInitialSetup, isStage, targetId, soundName) {
                 </shadow>
             </value>
         </block>
-        <block type="sound_playallsounds"/>
         <block type="sound_stopallsounds"/>
         ${blockSeparator}
         <block id="${targetId}_sound_set_stop_fadeout_to" type="sound_set_stop_fadeout_to">
@@ -836,20 +781,7 @@ const sensing = function (isInitialSetup, isStage, targetId) {
             </block>
         `}
         <block id="answer" type="sensing_answer"/>
-        <block type="sensing_thing_is_text">
-            <value name="TEXT1">
-                <shadow type="text">
-                    <field name="TEXT">world</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="sensing_thing_is_number">
-            <value name="TEXT1">
-                <shadow type="text">
-                    <field name="TEXT">10</field>
-                </shadow>
-            </value>
-        </block>
+   
         ${blockSeparator}
         <block type="sensing_keypressed">
             <value name="KEY_OPTION">
@@ -912,7 +844,6 @@ const sensing = function (isInitialSetup, isStage, targetId) {
         <block id="current" type="sensing_current"/>
         <block type="sensing_dayssince2000"/>
         ${blockSeparator}
-        <block type="sensing_mobile"></block>
         <block type="sensing_fingerdown">
             <value name="FINGER_OPTION">
                 <shadow id="sensing_fingeroptions" type="sensing_fingeroptions"/>
@@ -934,9 +865,22 @@ const sensing = function (isInitialSetup, isStage, targetId) {
             </value>
         </block>
         ${blockSeparator}
-        <button text="${helpManual}" callbackKey="OPEN_USERNAME_DOCS" />
         <block type="sensing_username"/>
-        <block type="sensing_loggedin"/>
+        ${blockSeparator}
+         <block type="sensing_thing_is_text">
+            <value name="TEXT1">
+                <shadow type="text">
+                    <field name="TEXT">world</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="sensing_thing_is_number">
+            <value name="TEXT1">
+                <shadow type="text">
+                    <field name="TEXT">10</field>
+                </shadow>
+            </value>
+        </block>
         ${categorySeparator}
     </category>
     `;
@@ -1367,21 +1311,7 @@ const operators = function (isInitialSetup) {
                 </shadow>
             </value>
         </block>
-        ${blockSeparator}
-        <block type="operator_stringify">
-            <value name="ONE">
-                <shadow type="text">
-                    <field name="TEXT">foo</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="operator_boolify">
-            <value name="ONE">
-                <shadow type="text">
-                    <field name="TEXT">true</field>
-                </shadow>
-            </value>
-        </block>
+    
         ${categorySeparator}
     </category>
     `;
