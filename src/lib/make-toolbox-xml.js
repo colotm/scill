@@ -940,15 +940,15 @@ const operators = function (isInitialSetup) {
                 </shadow>
             </value>
         </block>
-        <block type="operator_power">
+        <block type="operator_advMath">
             <value name="NUM1">
                 <shadow type="math_number">
-                    <field name="NUM"/>
+                    <field name="NUM"/>1</field>
                 </shadow>
             </value>
             <value name="NUM2">
                 <shadow type="math_number">
-                    <field name="NUM"/>
+                    <field name="NUM"/>2</field>
                 </shadow>
             </value>
         </block>
@@ -1096,11 +1096,13 @@ const operators = function (isInitialSetup) {
         ${blockSeparator}
         <block type="operator_and"/>
         <block type="operator_or"/>
-                <block type="operator_nand"/>
-        <block type="operator_nor"/>
-                <block type="operator_xor"/>
-        <block type="operator_xnor"/>
         <block type="operator_not"/>
+        ${blockSeparator}
+        <block type="operator_nand"/>
+        <block type="operator_nor"/>
+        <block type="operator_xor"/>
+        <block type="operator_xnor"/>
+
         ${blockSeparator}
         ${isInitialSetup ? '' : `
             <block type="operator_newLine"></block>
@@ -1173,7 +1175,7 @@ const operators = function (isInitialSetup) {
                     </shadow>
                 </value>
             </block>
-            <block type="operator_getLettersFromIndexToIndexInTextFixed">
+            <block type="operator_getLettersFromIndexToIndexInText">
                 <value name="INDEX1">
                     <shadow type="math_number">
                         <field name="NUM">2</field>
@@ -1226,7 +1228,7 @@ const operators = function (isInitialSetup) {
             <block type="operator_replaceAll">
                 <value name="text">
                     <shadow type="text">
-                        <field name="TEXT">foo bar</field>
+                        <field name="TEXT">foobar</field>
                     </shadow>
                 </value>
                 <value name="term">
@@ -1260,7 +1262,7 @@ const operators = function (isInitialSetup) {
             <block type="operator_regexmatch">
                 <value name="text">
                     <shadow type="text">
-                        <field name="TEXT">foo bar</field>
+                        <field name="TEXT">foobar</field>
                     </shadow>
                 </value>
                 <value name="reg">
