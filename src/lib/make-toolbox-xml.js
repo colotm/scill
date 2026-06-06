@@ -1310,8 +1310,6 @@ const trips = function () {
         id="trips"
         colour="#92939F"
         secondaryColour="#234FA2"
-        custom="TRIP">
-            <category
          <block type="sensing_thing_is_text">
             <value name="TEXT1">
                 <shadow type="text">
