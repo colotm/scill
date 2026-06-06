@@ -866,21 +866,6 @@ const sensing = function (isInitialSetup, isStage, targetId) {
         </block>
         ${blockSeparator}
         <block type="sensing_username"/>
-        ${blockSeparator}
-         <block type="sensing_thing_is_text">
-            <value name="TEXT1">
-                <shadow type="text">
-                    <field name="TEXT">world</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="sensing_thing_is_number">
-            <value name="TEXT1">
-                <shadow type="text">
-                    <field name="TEXT">10</field>
-                </shadow>
-            </value>
-        </block>
         ${categorySeparator}
     </category>
     `;
@@ -1318,7 +1303,31 @@ const operators = function (isInitialSetup) {
     </category>
     `;
 };
-
+const trips = function () {
+    return `
+    <category
+        name="Trips"
+        id="trips"
+        colour="#92939F"
+        secondaryColour="#234FA2"
+        custom="TRIP">
+            <category
+         <block type="sensing_thing_is_text">
+            <value name="TEXT1">
+                <shadow type="text">
+                    <field name="TEXT">world</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="sensing_thing_is_number">
+            <value name="TEXT1">
+                <shadow type="text">
+                    <field name="TEXT">10</field>
+                </shadow>
+            </value>
+        </block>
+                ${categorySeparator}
+            </category>
 const variables = function () {
     return `
     <category
