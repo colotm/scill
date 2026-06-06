@@ -1326,6 +1326,8 @@ const trips = function () {
         </block>
                 ${categorySeparator}
             </category>
+            `;
+};
 const variables = function () {
     return `
     <category
