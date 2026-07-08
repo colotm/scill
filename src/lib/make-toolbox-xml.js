@@ -1451,6 +1451,7 @@ const makeToolboxXML = function (isInitialSetup, isStage = true, targetId, categ
     const controlXML = moveCategory('control') || control(isInitialSetup, isStage, targetId);
     const sensingXML = moveCategory('sensing') || sensing(isInitialSetup, isStage, targetId);
     const operatorsXML = moveCategory('operators') || operators(isInitialSetup, isStage, targetId);
+    const tripsXML = moveCategory('trips') || operators(isInitialSetup, isStage, targetId);
     const variablesXML = moveCategory('variables') || variables(isInitialSetup, isStage, targetId);
     const listsXML = moveCategory('lists') || lists(isInitialSetup, isStage, targetId);
     const myBlocksXML = moveCategory('procedures') || myBlocks(isInitialSetup, isStage, targetId);
@@ -1465,6 +1466,7 @@ const makeToolboxXML = function (isInitialSetup, isStage = true, targetId, categ
         controlXML,
         sensingXML,
         operatorsXML,
+        tripsXML,
         variablesXML,
         listsXML,
         myBlocksXML
