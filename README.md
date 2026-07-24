@@ -1,4 +1,4 @@
- modified for in Turbo Warp Penguiod] 😀
+ modified for in Turbo Warp Penguin Mod] 😀 emoji
 ## Setup
 
 See https://docs.turbowarp.org/development/getting-started to setup the complete TurboWarp environment.
